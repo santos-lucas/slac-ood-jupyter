@@ -6,7 +6,7 @@ form:
   - commands
   - use_lab
   - use_core_mode
-  #- slurm_account
+  - slurm_account
   - slurm_partition
   - bc_num_hours
   - num_cores
@@ -73,6 +73,11 @@ attributes:
     min: 0
     max: 10
     step: 1
+  slurm_account:
+    label: "Account"
+    help: |
+      Slurm [Account] to launch Jupyter job on
+    value: ""
   slurm_partition:
     label: "Partition"
     help: |
